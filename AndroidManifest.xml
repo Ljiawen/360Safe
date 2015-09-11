@@ -1,0 +1,38 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.itheima.mobilesafe"
+    android:versionCode="1"
+    android:versionName="1.0" 
+    >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+<instrumentation
+    android:name="android.test.InstrumentationTestRunner"
+    android:targetPackage="com.itheima.mobilesafe"
+    ></instrumentation>
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="android.test.runner"></uses-library>
+        <activity
+            android:name="com.ithiema.mobilesafe.SplashActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Black.NoTitleBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" >
+                </action>
+
+                <category android:name="android.intent.category.LAUNCHER" >
+                </category>
+            </intent-filter>
+        </activity>
+        <activity android:name="com.ithiema.mobilesafe.activity.HomeActivity"/>
+            
+    </application>
+
+</manifest>
